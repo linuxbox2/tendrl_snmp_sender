@@ -1,0 +1,6 @@
+
+authUser log myuser
+createUser -e 8000000001020304 myuser MD5 mymd5pass DES mydespass
+
+
+ 
