@@ -55,9 +55,7 @@ class SnmpAlert(object):
         self.alert_id = alert_id
         self.alert_fields = alert_fields
         self.alert_type = self.alert_fields['type']
-        self.alert_fields.pop('type', None)
         self.alert_node = alert_fields['node-id']
-        self.alert_fields.pop('node-id', None)
 
     def getPDU(self):
         kvs = len(self.alert_fields.keys())
